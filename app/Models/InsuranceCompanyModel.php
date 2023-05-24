@@ -10,5 +10,7 @@ class InsuranceCompanyModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = ['name'];
 
+    
+
  
 }

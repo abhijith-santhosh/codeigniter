@@ -12,13 +12,18 @@ class InsuranceController extends BaseController
     // }
     // public function about()
     // {
-    //     return view('about');
+    //     return view('about'); 
     // }
-
+    public function __construct()
+    {
+        $this->db = db_connect(); // Load the database library and assign to $db
+    }
 
 
     public function index()
 {
+   
+
     // Load the InsuranceCompanyModel
     $insuranceCompanyModel = new InsuranceCompanyModel();
 
