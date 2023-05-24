@@ -14,11 +14,7 @@ class InsuranceController extends BaseController
     // {
     //     return view('about'); 
     // }
-    public function __construct()
-    {
-        $this->db = db_connect(); // Load the database library and assign to $db
-    }
-
+  
 
     public function index()
 {
@@ -31,7 +27,7 @@ class InsuranceController extends BaseController
     $data['companies'] = $insuranceCompanyModel->findAll();
 
     // Pass the data to the view
-    return view('insurance/index', $data);
+    return view('insurance/home', $data);
 }
 
 public function carModels($companyId)
